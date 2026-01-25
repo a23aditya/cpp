@@ -21,6 +21,20 @@ int main(){
 	//now check
 
 	if(s1.empty())
-		cout<<"s1 is empty";
+		cout<<"s1 is empty"<<endl;
+
+
+	string s2 = to_string(-10);
+	cout<< s2<<endl;
+
+	double no = stod(s2);		// string to double
+	cout<<no<<endl;
+
+	string name;
+	cout<<"Enter name"<<endl;
+	getline(cin,name);
+	
+	cout<<"Name is :"<<name<<endl;
+	
 
 }
