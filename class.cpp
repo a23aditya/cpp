@@ -5,7 +5,7 @@ class BankAccount
 {
 	public:			// access specifier
 		string name;
-		int bal;		
+		int bal;	// attributes		
 	
 	void withdraw(int amt){
 		bal = bal -amt;
