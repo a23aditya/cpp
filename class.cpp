@@ -5,7 +5,13 @@ class BankAccount
 {
 	public:			// access specifier
 		string name;
-		int bal;			
+		int bal;		
+	
+	void withdraw(int amt){
+		bal = bal -amt;
+		cout<<bal;
+	}
+	
 };	
 
 int main(){
@@ -14,4 +20,7 @@ int main(){
 	ac.bal=100000;
 
 	cout<<ac.name<<endl<<ac.bal;
+	
+	cout<<endl;
+	ac.withdraw(10);
 };
