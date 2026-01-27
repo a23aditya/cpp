@@ -5,16 +5,17 @@ class Employee{
 	public:
 		string name;
 	
+	//--------------------------------	
 	void set_salary(double sal)
 	{
 		salary = sal;
 	}
-
+					// {   Encapsulation    }
 	double get_salary()
 	{
 		return salary;
 	}
-
+	//---------------------------------
 	private:
 		double salary;
 
