@@ -3,7 +3,7 @@ using namespace std;
 
 class Rec{
 	public:
-		void set_dimension(int l,int b);
+		void set_dimension(int l,int b =10); // if b is not provided default is 10
 
 		int para(){
 			return 2*length*width;	
