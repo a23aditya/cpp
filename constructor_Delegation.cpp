@@ -1,6 +1,10 @@
 #include<iostream>
 using namespace std;
 
+//Constructor delegation allows one constructor of a class to
+// call another constructor of the same class.
+
+
 class ABC{
 	
 
