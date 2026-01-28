@@ -1,6 +1,11 @@
 #include<iostream>
 using namespace std;
 
+/*
+The compiler generates a default constructor only if no constructors are declared. 
+Once any constructor is declared, the implicit default constructor is suppressed unless explicitly defined or defaulted.
+*/
+
 class Cat{
 	public:
 		string name;
