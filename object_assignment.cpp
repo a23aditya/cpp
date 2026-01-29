@@ -23,6 +23,11 @@ class Heap{
 	{
 		*data = val;
 	}
+	
+	~Heap(){
+	//	delete data;	// here due to h2=h1 double free cause crash
+	}
+
 };
 
 int main(){
