@@ -5,6 +5,8 @@ using namespace std;
 // classic example of a shallow copy
 //-----------------------------------
 
+// Note : Default Copy Constructor use Shallow Copy
+
 class Heap{
 	public:
 	int *data;
