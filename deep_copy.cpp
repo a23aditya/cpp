@@ -22,6 +22,13 @@ Syntax
 
 	h2 = h1;           // copy assignment
 
+-----------
+NOTE:
+-----------
+The copy constructor allocates new memory for a new object, while the copy assignment operator
+must first release existing resources before copying. 
+Failing to delete old memory leads to leaks, and failing to handle self-assignment leads to undefined behavior.
+
 
 */
 
