@@ -46,9 +46,11 @@ class Heap{
 
 	Heap &operator=(const Heap &obj)
 	{
+		if (this != &obj) {
+	            delete data;
 		data = new int;
 		*data = *(obj.data);
-
+		}
 		return *this;
 	}
 
