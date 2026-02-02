@@ -13,7 +13,13 @@ class Num{
 	{
 		return Num(this->n + obj.n);
 	}
- 
+
+	bool operator ==(const Num &obj)
+	{
+		if(this->n == obj.n)
+			return true;
+		return false;
+	} 
 	
 };
 
@@ -24,4 +30,13 @@ int main(){
 	Num n3 = n1+n2;
 
 	cout << n3.n;
+
+	Num n4(15);
+
+
+	if(n4 == n3)
+		cout<<"equal";
+
+	
+
 };
