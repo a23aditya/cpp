@@ -25,6 +25,7 @@ class A{
 class B : public A
 {
 	public:
+
 	B()
 	{
 		cout<<"--B---"<<endl;
@@ -40,10 +41,10 @@ class B : public A
 class C : public B
 {
 	public:
-	C()
+	C(int tdata)
 	{
 		cout<< "----C----"<<endl;
-		data = 3;
+		data = tdata;
 		cout<<data;	
 		cout<<"---------"<<endl;
 	}
@@ -55,7 +56,7 @@ class C : public B
 
 int main(){
 	
-	C o1;
+	C o1(3);
 	
 //	o1.show();	
 	
