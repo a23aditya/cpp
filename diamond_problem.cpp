@@ -43,17 +43,30 @@ class C : virtual public A
 };
 
 
-class D: public B,public C
+class D: public C,public B
 {
 	public:
-	D()
+	D(int val)
 	{
+		data = val;
 		cout<<"data is"<<data;
 	}	
 };
 
 
 int main(){	
-	D o1;
+	D o1(5);
 
-};
+}
+
+/*
+
+	class D : public C, public B
+	So the order is:
+
+		A()
+		C()
+		B()
+		D()
+
+*/;
