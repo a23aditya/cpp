@@ -24,6 +24,10 @@ int main(){
 
 	oos::print();
 
+	namespace r = raw;
+
+	r::print();
+
 	using namespace raw;
 
 	print();
