@@ -24,4 +24,8 @@ int main(){
 
 	oos::print();
 
+	using namespace raw;
+
+	print();
+
 };
