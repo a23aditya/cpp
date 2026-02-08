@@ -34,5 +34,6 @@ int main(){
 	cout<<endl<<"data is :"<< (*p).data<<endl;   //(*p).x   ==   p->x
 
 	cout<<"2nd "<<p->data;
-
+	
+	delete p;
 };
