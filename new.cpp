@@ -2,6 +2,11 @@
 using namespace std;
 #include <cstring>
 
+class ABC{
+	public:
+	int data;
+};
+
 int main(){
 
 //variable
@@ -20,4 +25,14 @@ int main(){
 	    cout << arr[i] << " ";
 
 	delete[] arr;
+
+//class
+	ABC *p = new ABC;
+
+	(*p).data = 1;
+	
+	cout<<endl<<"data is :"<< (*p).data<<endl;   //(*p).x   ==   p->x
+
+	cout<<"2nd "<<p->data;
+
 };
