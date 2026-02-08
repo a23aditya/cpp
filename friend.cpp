@@ -18,19 +18,33 @@ class ABC
 	int x;
 
 	friend void double_x(ABC &o);
-
+	friend ABC operator*(int n, const ABC &a);
 	public:
 	
-	ABC()
+	ABC(int y)
 	{
-		x= 5;
+		x= y;
 	}	
 
 	void show()
 	{
 		cout<< "x is now "<<x<<endl;
 	}
+
+	ABC operator* (const ABC &a)
+	{
+		int res = x * a.x;
+		return ABC(res);		
+	}
+	
+
 };
+
+ABC operator*(int n, const ABC &a)
+{
+    return ABC(n * a.x);
+}
+
 
 void double_x(ABC &o)
 {
@@ -38,10 +52,17 @@ void double_x(ABC &o)
 }
 
 int main(){
-	ABC a;
+	ABC a(5);
 		
 	double_x(a);	
 
 	a.show();
-
+				
+				//a.operator*(ABC(20))		
+	ABC o2 = a*20;		//20 → implicitly converted to ABC(20) 
+	o2.show();
+	
+				// 20 * a --> not work
+	ABC o3 = 5*a;		
+	o3.show();
 };
