@@ -1,6 +1,13 @@
 #include<iostream>
 using namespace std;
 
+/*
+The following operators can never be overloaded:
+
+	.    ::    ?:    sizeof    typeid    alignof
+
+*/
+
 class Num{
 	public:
 	int n;
